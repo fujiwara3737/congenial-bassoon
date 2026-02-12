@@ -1,0 +1,8 @@
+{
+  "name": "fdso-knowledge-base",
+  "description": "Official knowledge management system for FDSO. Features include NotebookLM integration, strict data-driven AI responses, and comprehensive driver support manuals.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
