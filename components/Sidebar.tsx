@@ -13,6 +13,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setView, isOpen, onClose
     { id: ViewMode.DASHBOARD, label: 'ダッシュボード', icon: '📊' },
     { id: ViewMode.CHAT, label: '対話型マニュアル', icon: '💬' },
     { id: ViewMode.KNOWLEDGE_BASE, label: 'ナレッジ管理', icon: '📚' },
+    { id: ViewMode.MEETING_SCHEDULER, label: '会議スケジューラー', icon: '📅' },
   ];
 
   return (

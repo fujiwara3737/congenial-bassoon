@@ -38,5 +38,6 @@ export interface ChatMessage {
 export enum ViewMode {
   DASHBOARD = 'DASHBOARD',
   CHAT = 'CHAT',
-  KNOWLEDGE_BASE = 'KNOWLEDGE_BASE'
+  KNOWLEDGE_BASE = 'KNOWLEDGE_BASE',
+  MEETING_SCHEDULER = 'MEETING_SCHEDULER'
 }

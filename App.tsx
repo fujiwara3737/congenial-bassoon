@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import DashboardHome from './components/DashboardHome';
 import ChatInterface from './components/ChatInterface';
 import KnowledgeManager from './components/KnowledgeManager';
+import MeetingScheduler from './components/MeetingScheduler';
 import { ViewMode, DocumentItem } from './types';
 import { storageService } from './services/storageService';
 
@@ -74,13 +75,15 @@ const App: React.FC = () => {
         return <ChatInterface documents={documents} />;
       case ViewMode.KNOWLEDGE_BASE:
         return (
-          <KnowledgeManager 
-            documents={documents} 
+          <KnowledgeManager
+            documents={documents}
             addDocument={addDocument}
             editDocument={editDocument}
             deleteDocument={deleteDocument}
           />
         );
+      case ViewMode.MEETING_SCHEDULER:
+        return <MeetingScheduler />;
       default:
         return <div>View not found</div>;
     }
