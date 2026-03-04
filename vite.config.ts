@@ -11,6 +11,10 @@ export default defineConfig(({ mode }) => {
     define: {
       // API keys must be stringified to be injected properly
       'process.env.API_KEY': JSON.stringify(env.API_KEY),
+    },
+    server: {
+      host: true,
+      allowedHosts: 'all',
     }
   }
 })
